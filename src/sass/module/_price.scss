@@ -1,0 +1,81 @@
+@use "global" as *;
+
+.price {
+  padding-top: rem(76);
+  padding-bottom: rem(83);
+  position: relative;
+  background-color: #DDF0F1;
+  @include mq(md) {
+    padding-top: rem(90);
+    padding-bottom: rem(104);
+  }
+}
+
+.price::after {
+  @include mq(md) {
+    position: absolute;
+    content:"";
+    background: url(../../../dist/assets/images/price-deco.svg)no-repeat left bottom/contain;
+    width: rem(437);
+    height: rem(200);
+    left: 7%;
+    bottom: 5%;  
+  }
+}
+
+.price__wrapper {
+  margin-top: rem(45);
+  @include mq(md) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: rem(56);
+  }
+}
+
+.price__left {
+  @include mq(md) {
+    width: 45.5%;
+  }
+}
+
+.price__right {
+  margin-top: rem(45);
+  @include mq(md) {
+    width: 45.5%;
+    margin-top: rem(4);
+  }
+}
+
+.price__items + .price__items{
+  margin-top: rem(43);
+}
+
+.price__item {
+  font-size: rem(16);
+  border-bottom: 1px solid $green;
+}
+
+.price__detail {
+  display: flex;
+  justify-content: space-between;
+  font-size: rem(14);
+  font-weight: $regular;
+  margin-top: rem(11);
+  font-family: $base-font-family;
+  @include mq(md) {
+    font-size: rem(16);
+    margin-top: rem(8);
+  }
+}
+
+// .price__price {
+//   font-family: $base-font-family;
+// }
+
+.price__btn {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(81);
+  }
+}

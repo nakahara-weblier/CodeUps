@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.title {
+  font-size: rem(32);
+  position: relative;
+  text-align: center;
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.title::first-letter {
+  color: $green;
+}
+
+.title--white {
+  @include mq(md) {
+    color: $white;
+  }
+}
+
+.title--white::first-letter {
+  @include mq(md) {
+    color:#DDF0F1
+  }
+}
+
+.title__sub {
+  font-size: rem(12);
+  color: $green;
+  position: absolute;
+  position: absolute;
+  top: 122%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  @include mq(md) {
+    top: 115%;
+  }
+}
+
+.title__sub--white {
+  @include mq(md) {
+    color: $white;
+  }
+}

@@ -1,0 +1,172 @@
+@use "global" as *;
+
+.card01 {
+  max-width: rem(280);
+  min-height: rem(366);
+  box-shadow: 2px 2px 10px rgba(0,0,0,.25);
+  margin-bottom: rem(10);
+  @include mq(md) {
+    max-width: rem(333);
+  }
+}
+
+.card01__figure {
+  aspect-ratio: 280/188;
+  width: 100%;
+  height: auto;
+}
+
+.card01__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card01__header {
+  padding:rem(16) 0 rem(5);
+  border-bottom: 1px solid $green;
+  margin: 0 rem(16);
+  @include mq(md) {
+    padding:rem(22) 0 rem(5);
+  }
+}
+
+.card01__tag {
+  display: inline-block;
+  font-size: rem(12);
+  color: $green;
+  border: 1px solid $green;
+  padding: rem(5) rem(11);
+  @include mq(md) {
+    padding:rem(7) rem(15);
+  }
+
+}
+
+.card01__title {
+  font-size: rem(16);
+  font-weight: $regular;
+  margin-top: rem(7);
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card01__body {
+  padding: rem(11) rem(15) rem(15);
+  @include mq(md) {
+    padding: rem(19) rem(15) rem(31);
+  }
+}
+
+.card01__detail {
+  font-size: rem(14);
+  text-align: center;
+  letter-spacing: -1px;
+	text-indent: 7px;
+  @include mq(md) {
+    letter-spacing: 1.5px;
+    text-indent: 1.5px;  
+  }
+}
+
+.card01__price {
+  text-align: center;
+  font-family: "Lato";
+  font-size: rem(32);
+  font-weight: $bold;
+  color: $green;
+  line-height: 1.5;
+  @include mq(md) {
+    font-size: rem(40);
+    line-height: 1.4;
+  }
+}
+
+.card01__price span {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  font-size: rem(20);
+  color: $black;
+  margin-right: rem(18);
+  @include mq(md) {
+    font-size: rem(24);
+    margin-right: rem(25);
+  }
+}
+
+.card01__copy {
+  font-size: rem(16);
+  margin-top: rem(25);
+}
+
+.card01__footer {
+  padding: rem(15) rem(25);
+  margin-top: rem(25);
+  color: $green;
+  text-align: center;
+}
+
+.card01__period {
+  font-family: "Lato";
+  font-weight: $bold;
+  font-size: rem(16);
+}
+
+.card01__contact {
+  font-size: rem(14);
+  margin-top: rem(10);
+}
+
+.card01__btn {
+  margin-top: rem(20);
+}
+
+
+// 下層ページ（キャンペーン）のカード
+.card01--bottom {
+  @include mq(md) {
+    max-width: rem(520);
+  }
+}
+
+.card01__header--bottom {
+  @include mq(md) {
+    padding:rem(16) 0;
+    margin: 0 rem(25);
+  }
+}
+
+
+.card01__title--bottom {
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.card01__body--bottom {
+  padding: rem(11) rem(15) rem(25);
+  @include mq(md) {
+    padding: rem(15) rem(25);
+
+  }
+}
+
+
+.card01__detail--bottom {
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+// .card01__price--bottom {
+//   @include mq(md) {
+//     font-size: rem(40);
+//   }
+// }
+
+// .card01__price--bottom span {
+//   @include mq(md) {
+//     font-size: rem(24);
+//   }
+// }

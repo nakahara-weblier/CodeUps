@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.campaign {
+  padding-top: rem(38);
+  @include mq(md) {
+    padding-top: rem(110);
+  }
+}
+
+.campaign__btn {
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: rem(70);
+  }
+}
