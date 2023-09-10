@@ -4,7 +4,6 @@
   padding-top: rem(80);
   padding-bottom: rem(74);
   position: relative;
-  font-family: "base-font-family";
   @include mq(md) {
     padding-top: rem(134);
     padding-bottom: rem(142);
@@ -15,7 +14,7 @@
   @include mq(md) {
     position: absolute;
     content:"";
-    background: url(../../../dist/assets/images/about-deco01.svg)no-repeat right bottom/contain;
+    background: url(./../images/about-deco01.svg)no-repeat right bottom/contain;
     width: rem(194);
     height: rem(181);
     right: 6%;

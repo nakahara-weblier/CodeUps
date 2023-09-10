@@ -17,7 +17,7 @@
   @include mq(md) {
     content:"";
     position: absolute;
-    background: url(../../../dist/assets/images/overflow-deco.svg)no-repeat left top/contain;
+    background: url(./../images/overflow-deco.svg)no-repeat left top/contain;
     width: rem(300);
     height: rem(138);
     right: 3%;

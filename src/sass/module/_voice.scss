@@ -3,7 +3,6 @@
 .voice {
   padding-top: rem(81);
   padding-bottom: rem(81);
-  font-family: "base-font-family";
   @include mq(md) {
     padding-top: rem(134);
     padding-bottom: rem(144);
@@ -15,7 +14,7 @@
   @include mq(md) {
     content:"";
     position: absolute;
-    background: url(../../../dist/assets/images/voice-deco01.svg)no-repeat left top/contain;
+    background: url(./../images/voice-deco01.svg)no-repeat left top/contain;
     width: rem(300);
     height: rem(138);
     left: 7%;
@@ -27,7 +26,7 @@
   @include mq(md) {
     content:"";
     position: absolute;
-    background: url(../../../dist/assets/images/voice-deco02.svg)no-repeat left top/contain;
+    background: url(./../images/voice-deco02.svg)no-repeat left top/contain;
     width: rem(71);
     height: rem(162);
     right: 12.5%;
@@ -40,7 +39,7 @@
 
 .inner.voice__inner {
   @include mq(md) {
-    max-width: rem(1165);
+    max-width: rem(1130);
   }
 }
 
@@ -53,6 +52,7 @@
 
 .voice__btn {
   margin-top: rem(40);
+  text-align: center;
   @include mq(md) {
     margin-top: rem(70);
   }

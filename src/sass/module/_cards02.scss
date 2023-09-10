@@ -3,8 +3,13 @@
 
 .cards02 {
   @include mq(md) {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    max-width: rem(1080);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+    // display: flex;
+    // justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
   }

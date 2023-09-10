@@ -3,8 +3,12 @@
 
 .cards03 {
   @include mq(md) {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4%;
+    // display: flex;
+    // justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
   }

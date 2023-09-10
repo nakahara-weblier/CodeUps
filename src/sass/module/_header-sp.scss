@@ -56,7 +56,7 @@
 .sp-nav__item:first-child:before {
   position: absolute;
   content:"";
-  background: url(../../../dist/assets/images/icon.svg)no-repeat left top / contain;
+  background: url(./../images/icon.svg)no-repeat left top / contain;
   width: 20px;
   height: 20px;
   z-index: 1;

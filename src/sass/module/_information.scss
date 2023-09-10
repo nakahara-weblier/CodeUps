@@ -4,7 +4,6 @@
   background-color: #DDF0F1;
   padding-top: rem(75);
   padding-bottom: rem(84);
-  font-family: "base-font-family";
   @include mq(md) {
     padding-top: rem(90);
     padding-bottom: rem(101);
@@ -46,6 +45,7 @@
 }
 
 .information__head {
+  font-family: "base-font-family";
   font-size: rem(20);
   line-height: 1;
   padding-bottom: rem(2);
@@ -58,10 +58,12 @@
 }
 
 .information__detail {
+  font-family: "base-font-family";
   font-size: rem(16);
   margin-top: rem(10);
 }
 
 .information__btn {
   margin-top: rem(37);
+  text-align: center;
 }

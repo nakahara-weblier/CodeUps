@@ -7,8 +7,63 @@
   }
 }
 
+.inner.campaign__inner {
+  padding-right: rem(11);
+  padding-left: rem(11);
+}
+
+
+.campain__swiper {
+  margin-right: calc(50% - 50vw);
+  margin-top: rem(-50);
+}
+
+
+.swiper__button-wrapper {
+  display: none;
+  @include mq(md) {
+    display: flex;
+    gap: 0 5rem;
+    justify-content: flex-end;
+    max-width: 79.0625rem;
+    padding: 0 11.25rem;
+    height: 80px;
+    align-items: flex-end;  
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  height: 5rem;
+  position: static;
+  transition: 0.3s ease;
+  width: 5rem;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+  height: 5rem;
+  width: 5rem;
+}
+
+
+/* 次へ矢印の背景画像 */
+.swiper-button-next::after {
+  background: transparent url(./../images/arrow-next.svg) no-repeat center / contain;
+  }
+
+
+
+ /* 前へ矢印の背景画像 */
+.swiper-button-prev::after {
+  background: transparent url(./../images/arrow-prev.svg) no-repeat center / contain;
+}
+
+
 .campaign__btn {
   margin-top: rem(30);
+  text-align: center;
   @include mq(md) {
     margin-top: rem(70);
   }
